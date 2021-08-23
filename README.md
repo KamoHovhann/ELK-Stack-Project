@@ -42,7 +42,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 69.120.229.14
+- My Public IP Address
    
 
 Machines within the network can only be accessed by Jumpbox VM.
@@ -93,12 +93,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the ansible.cfg file to /etc/ansible.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- To make an asnible to run a playbook on a specific machine you are supposed to update the hosts file where you add the name and the IP of a machine. 
-- In order to check if the ELK is up and running you navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana.
-
+- Update the hosts file to include the machines you are trying to run the playbook
+- Run the playbook, and navigate to <public_ip_of_elk_machine> :5601/app/kibana to check that the installation worked as expected.
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
