@@ -22,7 +22,6 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly avilabe, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
   Load balancers protects the system from DDoS attacks by shifting attack traffic. 
   The advantage of a jump box is to give access to the user from a single node that can be secured and monitored.
 
@@ -101,7 +100,7 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- To make an asnible to run a playbook on a specific machine you are supposed to update the hosts file where you add the name and the IP of a machine. 
+- In order to check if the ELK is up and running you navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
